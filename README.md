@@ -1,1 +1,2 @@
 # Todo-List
+This project is a simple yet powerful to-do list application that allows users to manage tasks across multiple projects. Users can add, delete, and view to-dos, with support for organizing tasks by project. 
