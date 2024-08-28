@@ -1,0 +1,173 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Main Container for Layout */
+.main-container {
+    display: flex;
+    /* Flexbox for the two-column layout */
+    width: 100%;
+    max-width: 1000px;
+    gap: 20px;
+    align-self: center; 
+    /* Space between columns */
+}
+
+/* Centering the Header */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2rem;
+    align-self: center; 
+    padding: 10px 0 20px;
+}
+
+/* Left Column Styles */
+.left-column {
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 100vh;
+    
+}
+
+.form-container {
+    display: none;
+    margin-bottom: 20px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Input and Select Styling */
+input,
+select {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* Button Styling */
+.form-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.primary-btn,
+.secondary-btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.primary-btn {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.secondary-btn {
+    background-color: #6c757d;
+    color: #fff;
+}
+
+.primary-btn:hover {
+    background-color: #0056b3;
+}
+
+.secondary-btn:hover {
+    background-color: #5a6268;
+}
+
+/* Right Column Styles */
+.right-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 100vh;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), /* Soft shadow */
+                0 6px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* List Styles */
+.list-container {
+    height: 100vh;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    min-height: 200px;
+}
+
+.list-container > div {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.list-container > div:last-child {
+    border-bottom: none;
+}
+
+.selected {
+    background-color: rgb(96, 212, 85);
+}
+
+.delete,.edit{
+    background-color: rgb(247, 91, 91);
+    padding: 3px  8px;
+    margin: 0 5px 0px 20px;
+    border: none;
+    border-radius: 10px;
+    
+}
+.delete:hover,.edit:hover{
+    color: #ddd;
+    cursor: pointer;
+    font-weight: bold;
+    
+}
+
+.to-do-details{
+    background-color: rgb(152, 212, 212);
+    text-align: center;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 10px;
+}
+.checkbox{
+    margin-right: 5px;
+    
+}
