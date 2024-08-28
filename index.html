@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+<script defer src="main.js"></script></head>
+
+<body>
+    <h1>My To-Do List</h1>
+    <div class="main-container">
+
+        <div class="left-column">
+            <header>
+
+                <button id="show-project-form" class="primary-btn">Add New Project</button>
+            </header>
+
+
+            <div id="project-form-container" class="form-container">
+                <form id="project-form" class="form">
+                    <input type="text" id="project-name" placeholder="Enter project name" required>
+                    <div class="form-buttons">
+                        
+                        <button type="submit" class="primary-btn">Add Project</button>
+                        <button type="button" id="cancel-project-form" class="secondary-btn">Cancel</button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- To-Do Form -->
+            <div id="todo-form-container" class="form-container">
+                <form id="todo-form" class="form">
+                    <input type="text" id="todo-title" placeholder="Enter to-do title" required>
+                    <input type="text" id="todo-desc" placeholder="Enter to-do description" required>
+                    <input type="date" id="todo-date" required>
+                    <select id="todo-priority" required>
+                        <option value="low">Low</option>
+                        <option value="medium">Medium</option>
+                        <option value="high">High</option>
+                    </select>
+                    <select id="project-select" required>Under which project?</select>
+
+                    <div class="form-buttons">
+                        <button type="submit" class="primary-btn">Add To-Do</button>
+                        <button type="button" id="cancel-todo-form" class="secondary-btn">Cancel</button>
+                    </div>
+                </form>
+            </div>
+            <h2>Your Projects:</h2>
+            <div id="project-list" class="list-container"></div>
+        </div>
+
+        <!-- Right Column: Project and To-Do Lists -->
+        <div class="right-column">
+
+            <div id="todo-list" class="list-container"></div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
